@@ -20,7 +20,7 @@ form.addEventListener('submit', async function (e) {
   const message = messageInput.value
 
   try {
-    await axios.post('/api/7-z-email', {
+    await axios.post('/api/7-email', {
       name,
       email,
       subject,
@@ -38,6 +38,6 @@ form.addEventListener('submit', async function (e) {
     alert.style.display = 'block'
     alert.textContent = error.response.data
   }
-  btn.disabled = false
+  btn.disabled = true
   btn.innerHTML = 'Send'
 })
