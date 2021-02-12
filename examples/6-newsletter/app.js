@@ -15,7 +15,7 @@ form.addEventListener('submit', async function (e){
     } catch (error){
         console.log(error.response)
         alert.style.display='block'
-        alert.textContent=error.response.data.email[0]
+        alert.textContent='something is wrong. Try again later'
     }
     form.classList.remove('loading')
 
